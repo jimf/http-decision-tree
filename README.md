@@ -1,8 +1,8 @@
 # HTTP Decision Tree
 
-This is an interactive version of [choosing-code][Choosing an HTTP Status Code]
+This is an interactive version of [Choosing an HTTP Status Code][choosing-code]
 that I threw together for fun to demo some React + Ramda in my
-[IntroFP][Intro to FP in JavaScript] talk. It's mostly working, but a little
+[Intro to FP in JavaScript][IntroFP] talk. It's mostly working, but a little
 rough around the edges. If given more time, I'd like to:
 
 - add better instructions on what to do / what this is
