@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+*, :before, :after {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: transparent;
+  height: 100%;
+  text-align: center;
+}
+
+html:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em;
+}
+
+body {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background-color: #3b3b3b;
+  vertical-align: middle;
+}
+.app {
+  font-family: 'Open Sans', sans-serif;
+  color: #576870;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.questions {
+  overflow: hidden;
+}
+
+h1 {
+  background-color: #e8edf1;
+  font-size: 24px;
+  padding: 15px 0;
+  transition: all .2s ease-in-out;
+}
+h1.standard   { background: #edf67d; }
+h1.useful     { background: #96e6b3; }
+h1.irrelevant { background: #ca7df9; color: #e8edf1; }
+
+input[type="radio"] {
+  position: absolute;
+  left: -9999px;
+}
+
+label {
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  font-size: 24px;
+  color: #e8edf1;
+  font-weight: bold;
+  padding: 30px 0;
+  transition: all .2s ease-in-out;
+}
+
+.choice:nth-child(2) label { background: #C44D58; }
+.choice:nth-child(3) label { background: #FF6B6B; }
+.choice:nth-child(4) label { background: #e8c154; color: #777; }
+.choice:nth-child(5) label { background: #C7F464; color: #777; }
+.choice:nth-child(6) label { background: #4ECDC4; }
+.choice:nth-child(7) label { background: #556270; }
+
+.choice:nth-child(2) label:hover, .choice:nth-child(2) label:active { background: #a42c3b; transform: scale(1.05); }
+.choice:nth-child(3) label:hover, .choice:nth-child(3) label:active { background: #e24343; transform: scale(1.05); }
+.choice:nth-child(4) label:hover, .choice:nth-child(4) label:active { background: #d1a72f; transform: scale(1.05); }
+.choice:nth-child(5) label:hover, .choice:nth-child(5) label:active { background: #baf044; transform: scale(1.05); }
+.choice:nth-child(6) label:hover, .choice:nth-child(6) label:active { background: #2eb7ad; transform: scale(1.05); }
+.choice:nth-child(7) label:hover, .choice:nth-child(7) label:active { background: #3e4c5a; transform: scale(1.05); }
+
+button {
+  width: 100%;
+  background: #4ecdc4;
+  color: #e8edf1;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background .25s;
+}
+button:hover {
+  background: #2eb7ad;
+}
+
+footer {
+  font-size: 12px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-top: 5px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #9ba3a6;
+}
+footer a:hover, footer a:active {
+  color: #e8edf1;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+@keyframes bounceInDown {
+  from, 60%, 75%, 90%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  to {
+    transform: none;
+  }
+}
+
+.bounceInDown {
+  animation-name: bounceInDown;
+}
